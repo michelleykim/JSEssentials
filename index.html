@@ -91,9 +91,11 @@
 		<div style="margin-bottom: 10vw">
 			<h2 style="margin-left: 2vw">Inventory</h2>
 			<div id="inventory" style="margin-left: 2vw">
-				<button>Filter Clothing</button>
-				<button>Sort by Quantity</button>
-				<table>
+				<button onclick="filterType(`Clothing`)">Filter Clothing</button>
+				<button onclick="filterType(`First aid`)">Filter First aid</button>
+				<button onclick="filterType(`Misc.`)">Filter Misc.</button>
+				<button onclick="filterType(``)">Clear Filter</button>
+				<table id="inventory-table">
 					<tr>
 						<th scope="col">Image</th>
 						<th scope="col">Name</th>

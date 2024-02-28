@@ -1,0 +1,101 @@
+.yatra-one-regular {
+  font-family: "Yatra One", system-ui;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(144, 238, 255);
+}
+
+#inventory {
+  width: 90vw;
+}
+
+button {
+  font-family: "Yatra One", system-ui;
+  font-style: normal;
+  font-size: 20px;
+  background-color: transparent;
+  border-bottom: 0px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-weight: 100;
+  background-color: rgb(251, 220, 180);
+}
+
+th {
+  border: 2px solid;
+  width: 25%;
+}
+
+.inventory-img {
+  height: 8vw;
+  margin: 20px;
+}
+
+#map {
+  position: absolute;
+  width: 80vw;
+  margin-left: 8vw;
+  z-index: -1;
+}
+
+#map-inst {
+  margin-right: 22%;
+  margin-top: 5%;
+  margin-bottom: 0;
+  text-align: end;
+}
+
+#map-grid {
+  width: 65%;
+  height: 100%;
+  margin-left: 13%;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "legend . main main main main main main"
+    "legend . main main main main main main"
+    "legend . main main main main main main"
+    ". . main main main main main main"
+    ". . main main main main main main"
+    ". . main main main main main main";
+  justify-items: center;
+}
+
+.empty-cell {
+  width: 100%;
+}
+
+.empty-cell:hover {
+  cursor: pointer;
+}
+
+.no-interact-cell {
+  pointer-events: none;
+}
+
+.legend-cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.legend {
+  width: 59%;
+  margin: 0;
+}
+
+.map-icon {
+  width: 90%;
+}

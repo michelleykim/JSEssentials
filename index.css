@@ -35,9 +35,15 @@ th {
   width: 25%;
 }
 
+td {
+  border: 2px solid;
+  width: 25%;
+  padding: 20px;
+  text-align: center;
+}
+
 .inventory-img {
   height: 8vw;
-  margin: 20px;
 }
 
 #map {

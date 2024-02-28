@@ -30,6 +30,10 @@ function filterType(type) {
 		{ Image: "assets/cape.svg", Name: "Cape", Type: "Clothing", Quantity: 3 },
 	];
 
+	makeTable(items);
+}
+
+function makeTable(items) {
 	let table = document.getElementById("inventory-table");
 
 	table.innerHTML = `<tr>

@@ -1,3 +1,25 @@
+let items = [
+	{
+		Image: "assets/hoodie.svg",
+		Name: "Hoodie",
+		Type: "Clothing",
+		Quantity: 5,
+	},
+	{
+		Image: "assets/med kit.svg",
+		Name: "Med kit",
+		Type: "First aid",
+		Quantity: 2,
+	},
+	{
+		Image: "assets/seashells.svg",
+		Name: "Cute seashells",
+		Type: "Misc.",
+		Quantity: 11,
+	},
+	{ Image: "assets/cape.svg", Name: "Cape", Type: "Clothing", Quantity: 3 },
+];
+
 function addToken(row, col) {
 	console.log("row " + row + " col " + col + " cell is clicked!");
 }
@@ -8,27 +30,14 @@ function filterType(type) {
 
 	console.log("Filtering items: " + type);
 
-	let items = [
-		{
-			Image: "assets/hoodie.svg",
-			Name: "Hoodie",
-			Type: "Clothing",
-			Quantity: 5,
-		},
-		{
-			Image: "assets/med kit.svg",
-			Name: "Med kit",
-			Type: "First aid",
-			Quantity: 2,
-		},
-		{
-			Image: "assets/seashells.svg",
-			Name: "Cute seashells",
-			Type: "Misc.",
-			Quantity: 11,
-		},
-		{ Image: "assets/cape.svg", Name: "Cape", Type: "Clothing", Quantity: 3 },
-	];
+	makeTable(items);
+}
+
+function sortInventory(category) {
+	// This function is missing something!
+	// Find what's missing and make the sorting work :))
+
+	console.log("Sorting items by " + type);
 
 	makeTable(items);
 }

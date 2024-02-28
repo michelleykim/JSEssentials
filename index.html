@@ -91,9 +91,11 @@
 		<div style="margin-bottom: 10vw">
 			<h2 style="margin-left: 2vw">Inventory</h2>
 			<div id="inventory" style="margin-left: 2vw">
-				<button>Filter Clothing</button>
-				<button>Sort by Quantity</button>
-				<table>
+				<button onclick="filterType(`Clothing`)">Filter Clothing</button>
+				<button onclick="filterType(`First aid`)">Filter First aid</button>
+				<button onclick="filterType(`Misc.`)">Filter Misc.</button>
+				<button onclick="filterType(``)">Clear Filter</button>
+				<table id="inventory-table">
 					<tr>
 						<th scope="col">Image</th>
 						<th scope="col">Name</th>
@@ -101,44 +103,44 @@
 						<th scope="col">Quantity</th>
 					</tr>
 					<tr>
-						<th>
+						<td>
 							<img src="assets/hoodie.svg" alt="hoodie" class="inventory-img" />
-						</th>
-						<th>Hoodie</th>
-						<th>Clothing</th>
-						<th>5</th>
+						</td>
+						<td>Hoodie</td>
+						<td>Clothing</td>
+						<td>5</td>
 					</tr>
 					<tr>
-						<th>
+						<td>
 							<img
 								src="assets/med kit.svg"
 								alt="med kit"
 								class="inventory-img"
 							/>
-						</th>
-						<th>Med kit</th>
-						<th>First aid</th>
-						<th>2</th>
+						</td>
+						<td>Med kit</td>
+						<td>First aid</td>
+						<td>2</td>
 					</tr>
 					<tr>
-						<th>
+						<td>
 							<img
 								src="assets/seashells.svg"
 								alt="seashells"
 								class="inventory-img"
 							/>
-						</th>
-						<th>Cute seashells</th>
-						<th>Misc.</th>
-						<th>11</th>
+						</td>
+						<td>Cute seashells</td>
+						<td>Misc.</td>
+						<td>11</td>
 					</tr>
 					<tr>
-						<th>
+						<td>
 							<img src="assets/cape.svg" alt="cape" class="inventory-img" />
-						</th>
-						<th>Cape</th>
-						<th>Clothing</th>
-						<th>3</th>
+						</td>
+						<td>Cape</td>
+						<td>Clothing</td>
+						<td>3</td>
 					</tr>
 				</table>
 			</div>

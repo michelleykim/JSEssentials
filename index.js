@@ -30,16 +30,20 @@ function filterType(type) {
 
 	console.log("Filtering items: " + type);
 
-	makeTable(items);
+	let filteredItems = items;
+
+	makeTable(filteredItems);
 }
 
-function sortInventory(category) {
+function sortInventory() {
 	// This function is missing something!
 	// Find what's missing and make the sorting work :))
 
-	console.log("Sorting items by " + type);
+	console.log("Sorting items by Quantity");
 
-	makeTable(items);
+	let sortedItems = items;
+
+	makeTable(sortedItems);
 }
 
 function makeTable(items) {

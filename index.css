@@ -33,6 +33,7 @@ table {
 th {
   border: 2px solid;
   width: 25%;
+  cursor: pointer;
 }
 
 td {

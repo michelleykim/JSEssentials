@@ -22,6 +22,21 @@ const items = [
 
 function addToken(row, col) {
 	console.log("row " + row + " col " + col + " cell is clicked!");
+
+	let cell = document.getElementById(row + "-" + col);
+	let boatToken = `<img src="assets/boat.svg" alt="ship-token" class="map-icon">`;
+	let treasureToken = `<img src="assets/treasure.svg" alt="ship-token" class="map-icon">`;
+	let XToken = `<img src="assets/X marks the spot.svg" alt="ship-token" class="map-icon">`;
+
+	if (cell.innerHTML == "&nbsp;") {
+		cell.innerHTML = boatToken;
+	} else if (cell.innerHTML == boatToken) {
+		cell.innerHTML = treasureToken;
+	} else if (cell.innerHTML == treasureToken) {
+		cell.innerHTML = XToken;
+	} else if (cell.innerHTML == XToken) {
+		cell.innerHTML = "&nbsp;";
+	}
 }
 
 function filterType(type) {
